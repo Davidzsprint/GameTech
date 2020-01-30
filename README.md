@@ -15,7 +15,7 @@ Esta aplicación consiste dar información relacionada con el juego League of Le
 
 # Parte Pública:
 
-- Mostrar cada héroe (nombre, posicion, vida, ataque, defensa, mana, energia).
+- Mostrar cada héroe (nombre, descripción, posicion, vida, ataque, defensa, mana, energia).
 
 - Consultar liga del usuario (nombre de liga, posición en la liga (hierro, bronce, plata, oro, diamante, platino))
 
