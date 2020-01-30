@@ -33,7 +33,7 @@ Esta aplicación consiste dar información relacionada con el juego League of Le
 
 - Consultar héroe segun su dificultdad de manejo (nivel de dificultdad).
 
-- Consultar ranking de victorias totales.
+- Consultar ranking de victorias totales y KDA.
 
 # Parte Privada:
 
