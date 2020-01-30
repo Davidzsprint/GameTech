@@ -13,11 +13,16 @@ David Calderon Casarrubios
 Esta aplicación consiste dar información relacionada con el juego League of Lenguend. Mostrar caracteristicas de cada héroe, como son la vida, ataque, defensa, maná o energia y posición. Cambio de caracteristicas e información de nuevos héroes y clasificación del usuario. Además de tener la posibilidad de inscribirse a un torneo organizado por Gametech
 
 # Entidades:
-- Heroes
-- Usuario
-- Torneo
-- Liga
-- Ranking partidas ganadas.
+- Heroes: toda la informacion de cada heroe.
+
+- Usuario: Dispone de alias y contraseña, ademas contiene informacion del usuario e informacion de su juego.
+
+- Torneo: Torneos organizados por Gametech, donde los usuarios pueden apuntarse para competir.
+
+- Liga: liga a la que el usuario pertenece en League of lenguend, posicion, nombre de liga, etc.
+
+- Ranking: numero total de partidas ganadas de los usuarios y KDA.
+
 # Parte Pública:
 
 - Mostrar cada héroe (nombre, descripción, posicion, vida, ataque, defensa, mana, energia).
