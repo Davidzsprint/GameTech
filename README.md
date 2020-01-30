@@ -17,7 +17,7 @@ Esta aplicación consiste dar información relacionada con el juego League of Le
 
 - Mostrar cada héroe (nombre, posicion, vida, ataque, defensa, mana, energia).
 
-- consultar liga del usuario (nombre de liga, posición en la liga (hierro, bronce, plata, oro, diamante, platino))
+- Consultar liga del usuario (nombre de liga, posición en la liga (hierro, bronce, plata, oro, diamante, platino))
 
 - Consultar héroe segun posición  (adc, support, top, mid, jungla).
 
