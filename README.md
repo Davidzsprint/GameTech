@@ -17,7 +17,7 @@ Esta aplicación consiste dar información relacionada con el juego League of Le
 
 - Usuario: Dispone de alias y contraseña, ademas contiene informacion del usuario e informacion de su juego.
 
-- Torneo: Torneos organizados por Gametech, donde los usuarios pueden apuntarse para competir.
+- Conjunto de objetos: Contiene la información de los conjuntos de objetos que se pueden utilizar con cada héroe
 
 - Liga: liga a la que el usuario pertenece en League of lenguend, posicion, nombre de liga, etc.
 
@@ -26,6 +26,8 @@ Esta aplicación consiste dar información relacionada con el juego League of Le
 # Parte Pública:
 
 - Mostrar cada héroe (nombre, descripción, posicion, vida, ataque, defensa, mana, energia).
+
+- Mostrar los conjuntos de objetos guardados del héroe seleccionado
 
 - Consultar liga (nombre de liga, posición en la liga (hierro, bronce, plata, oro, diamante, platino))
 
@@ -43,7 +45,7 @@ Esta aplicación consiste dar información relacionada con el juego League of Le
 
 - Mostrar información del usuario (nick, nombre, apellidos, edad, región, coins dentro del juego, nacionalidad).
 
-- Un usuario tendrá la posibilidad de inscribirse a torneos que organiza Gametech.
+- Un usuario podrá crear conjuntos de objetos para los héroes, estos conjuntos se guardarán en los conjuntos a mostrar del héroe.
 
 - Existirá un usuario administrador que se encargara de gestionar los héroes (añadir, borrar y mofificar caracteristicas) ademas de gestionar los torneos organizados)
 # Servicio interno:
