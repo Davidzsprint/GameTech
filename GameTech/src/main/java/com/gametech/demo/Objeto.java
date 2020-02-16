@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Heroe {
+public class Objeto {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -14,35 +14,27 @@ public class Heroe {
 	
 	private String nombre;
 	private String descripcion;
-	private String posicion;
-	private int vida;
 	private int ataque;
 	private int defensa;
+	private int vida;
 	private int mana;
-	private int dificultad;
 	
 	
-	public Heroe() {
+	
+	public Objeto() {
 		
 	}
-	
-	
-	public Heroe(long id, String nombre, String descripcion, String posicion, int vida, int ataque, int defensa,
-			int mana, int dificultad) {
+
+	public Objeto(String nombre, String descripcion, int ataque, int defensa, int vida, int mana) {
 		super();
-		this.id = id;
 		this.nombre = nombre;
 		this.descripcion = descripcion;
-		this.posicion = posicion;
-		this.vida = vida;
 		this.ataque = ataque;
 		this.defensa = defensa;
+		this.vida = vida;
 		this.mana = mana;
-		this.dificultad = dificultad;
 	}
-
-
-
+	
 	public long getId() {
 		return id;
 	}
@@ -61,18 +53,6 @@ public class Heroe {
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
-	public String getPosicion() {
-		return posicion;
-	}
-	public void setPosicion(String posicion) {
-		this.posicion = posicion;
-	}
-	public int getVida() {
-		return vida;
-	}
-	public void setVida(int vida) {
-		this.vida = vida;
-	}
 	public int getAtaque() {
 		return ataque;
 	}
@@ -85,30 +65,24 @@ public class Heroe {
 	public void setDefensa(int defensa) {
 		this.defensa = defensa;
 	}
+	public int getVida() {
+		return vida;
+	}
+	public void setVida(int vida) {
+		this.vida = vida;
+	}
 	public int getMana() {
 		return mana;
 	}
 	public void setMana(int mana) {
 		this.mana = mana;
 	}
-	
-	
-	public int getDificultad() {
-		return dificultad;
-	}
-
-
-	public void setDificultad(int dificultad) {
-		this.dificultad = dificultad;
-	}
-
 
 	@Override
 	public String toString() {
-		return "Heroe [nombre=" + nombre + ", descripcion=" + descripcion + ", posicion=" + posicion
-				+ ", vida=" + vida + ", ataque=" + ataque + ", defensa=" + defensa + ", mana=" + mana + "]";
+		return "Objeto [nombre=" + nombre + ", descripcion=" + descripcion + ", ataque=" + ataque
+				+ ", defensa=" + defensa + ", vida=" + vida + ", mana=" + mana + "]";
 	}
-	
-	
+
 	
 }
