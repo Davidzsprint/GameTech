@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>buildsJugador</title>
+		<meta charset="utf-8">
+		<meta name = "format-detection" content = "telephone=no" />
+		<link rel="icon" href="images/favicon.ico">
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="stylesheet" href="css/table.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-migrate-1.2.1.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/superfish.js"></script>
+		<script src="js/jquery.ui.totop.js"></script>
+		<script src="js/jquery.equalheights.js"></script>
+		<script src="js/jquery.mobilemenu.js"></script>
+		<script>
+			$(document).ready(function(){
+				$().UItoTop({ easingType: 'easeOutQuart' });
+			});
+		</script>
+		
+	</head>
+	<body class="" id="top">
+		<div class="main">
+<!--==============================header=================================-->
+			<header>
+				<div class="container_12">
+					<div class="grid_12">
+						<div class="socials">
+							<a href="#" class="fa fa-twitter"></a>
+							<a href="#" class="fa fa-facebook"></a>
+							<a href="#" class="fa fa-google-plus"></a>
+							<a href="#" class="fa fa-instagram"></a>
+						</div>
+						<h1>
+							<a href="index.html">
+								<img src="images/logo.png" alt="GameTech">
+							</a>
+						</h1>
+						<div class="menu_block">
+							<nav class="horizontal-nav full-width horizontalNav-notprocessed">
+								<ul class="sf-menu">
+									<li><a href="/deportista">Espacio personal</a></li>
+									<li class="current"><a href="/equipoDeportista">Builds Jugador</a></li>
+									<input type="hidden" name="_csrf" value={{token}}>	
+									<li> <form method="post" action="/logout">  
+						           		<input type="hidden" name="_csrf" value={{token}}>   
+										<input type="submit" value="Abandonar Sesión" class="enlace" />	
+									</form>
+						  			</li>		
+								</ul>
+							</nav>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</header>
+<!--==============================Content=================================-->
+
+			
+               
+	 <!--  Componentes de la build -->
+	 
+	 
+	 <div class="content"><div class="ic"></div>
+				<div class="container_12">
+					<div class="grid22">
+						<h7><CENTER>OBJETOS DE LA BUILD</CENTER></h7>
+					</div>
+
+			
+				<table class="grid25">
+				  
+				  <tr>
+				    <th data-th="Driver details"><span>Nombre</span></th>
+				    <th>objeto1</th>
+				    <th>objeto2</th>
+				    <th>objeto3</th>
+				    <th>objeto4</th>
+				    <th>objeto5</th>
+				    <th>objeto6</th>
+				  </tr>
+				  
+				  <tr>
+				    <td><p>{{componente1}} </p></td>
+				    <td>{{email1}}</td>
+				    <td>*</td>
+				    <td>*</td>
+				    <td>*</td>
+				    <td>*</td>
+				    <td>*</td>
+				  </tr>
+				  
+				  <tr>
+				    <td><p>{{componente2}} </p></td>
+				    <td>{{email2}}</td>
+				    <td>*</td>
+				    <td>*</td>
+				    <td>*</td>
+				    <td>*</td>
+				    <td>*</td>
+				  </tr>
+				  
+				  <tr>
+				    <td><p>{{componente3}} </p></td>
+				    <td>{{email3}}</td>
+				    <td>*</td>
+				    <td>*</td>
+				    <td>*</td>
+				    <td>*</td>
+				    <td>*</td>
+				  </tr>
+				  
+				  <tr>
+				    <td><p>{{componente4}} </p></td>
+				    <td>{{email4}}</td>
+				    <td>*</td>
+				    <td>*</td>
+				    <td>*</td>
+				    <td>*</td>
+				    <td>*</td>
+				  </tr>
+				  
+				  <tr>
+				    <td><p>{{componente5}} </p></td>
+				    <td>{{email5}}</td>
+				    <td>*</td>
+				    <td>*</td>
+				    <td>*</td>
+				    <td>*</td>
+				    <td>*</td>
+				  </tr>
+				  
+				  
+				  
+				</table>
+				
+				</div>
+				
+				<div class="clear"></div>
+	
+			</div>
+				
+				<!-- </div><h3 class="Gametech somos David, Ruben y David</h3></div> -->
+				
+				<div class="clear"></div>
+				
+		</div>
+		
+		<hr>
+		
+		
+			
+			
+<!--==============================footer=================================-->
+		<footer>
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="f_logo">
+						<a href="index.html">GameTech</a>
+					</div>
+					<div class="f_contacts">
+						<a href="#" class="mail_link"><span class="fa fa-envelope"></span> GameTech@gmail.com</a>
+					</div>
+					
+				</div>
+				<div class="clear"></div>
+			</div>
+		</footer>
+	</body>
+</html>
