@@ -17,7 +17,7 @@ Esta aplicación consiste dar información relacionada con el juego League of Le
 
 - Usuario: Dispone de alias y contraseña, ademas contiene informacion del usuario e informacion de su juego.
 
-- Conjunto de objetos: Contiene la información de los conjuntos de objetos que se pueden utilizar con cada héroe
+- Build (Conjunto de objetos): Contiene la información de los conjuntos de objetos que se pueden utilizar con cada héroe
 
 - Liga: liga a la que el usuario pertenece en League of lenguend, posicion, nombre de liga, etc.
 
@@ -43,10 +43,10 @@ Esta aplicación consiste dar información relacionada con el juego League of Le
 
 - Un usuario tendrá una lista de 5 héroes que él elija como favoritos o personajes que suele utilizar.
 
-- Mostrar información del usuario (nick, nombre, apellidos, edad, región, coins dentro del juego, nacionalidad).
+- Area personal: Mostrar información del usuario (nick, servidor, pais, edad, ELO).
 
-- Un usuario podrá crear conjuntos de objetos para los héroes, estos conjuntos se guardarán en los conjuntos a mostrar del héroe.
+- Builds Usuario: Un usuario podrá crear conjuntos de objetos y se mostrara en un historico .
 
-- Existirá un usuario administrador que se encargara de gestionar los héroes (añadir, borrar y mofificar caracteristicas) ademas de gestionar los torneos organizados)
+- Existirá un usuario administrador que se encargara de gestionar los héroes (añadir, borrar y mofificar caracteristicas) ademas de gestionar el ranking)
 # Servicio interno:
 - Enviar una notificación a traves e-mail a los usuarios en caso de lanzarse un nuevo personaje, proporcionando caracteristicas de dicho héroe.
