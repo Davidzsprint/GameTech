@@ -51,7 +51,7 @@ Esta aplicación consiste dar información relacionada con el juego League of Le
 # Servicio interno:
 - Enviar una notificación a traves e-mail a los usuarios en caso de lanzarse un nuevo personaje, proporcionando caracteristicas de dicho héroe.
 # Diagrama E/R
-
+![digrama](https://user-images.githubusercontent.com/61190606/74888391-1914ce00-537e-11ea-9dde-71579f9f30cf.jpg)
 
 # Diagrama UML
 ![UML](https://user-images.githubusercontent.com/60217867/74888084-457c1a80-537d-11ea-8a9d-83dda8cd7e5b.jpg)
