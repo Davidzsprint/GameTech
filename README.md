@@ -50,3 +50,7 @@ Esta aplicación consiste dar información relacionada con el juego League of Le
 - Existirá un usuario administrador que se encargara de gestionar los héroes (añadir, borrar y mofificar caracteristicas) ademas de gestionar el ranking)
 # Servicio interno:
 - Enviar una notificación a traves e-mail a los usuarios en caso de lanzarse un nuevo personaje, proporcionando caracteristicas de dicho héroe.
+# Diagrama E/R
+
+
+# Diagrama UML
