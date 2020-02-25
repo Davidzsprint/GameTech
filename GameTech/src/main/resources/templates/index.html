@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Home</title>
+		<meta charset="utf-8">
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="icon" href="images/favicon.ico">
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="stylesheet" href="css/countdown.css">
+		<link rel="stylesheet" href="css/style_common.css" />
+		<link rel="stylesheet" href="css/style4.css" />
+		<link rel="stylesheet" href="css/camera.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-migrate-1.2.1.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/superfish.js"></script>
+		<script src="js/jquery.ui.totop.js"></script>
+		<script src="js/jquery.equalheights.js"></script>
+		<script src="js/jquery.mobilemenu.js"></script>
+		<script src="js/camera.js"></script>
+		<!--[if (gt IE 9)|!(IE)]><!-->
+		<script src="js/jquery.mobile.customized.min.js"></script>
+		<!--<![endif]-->
+		<script>
+			$(document).ready(function(){
+				jQuery('#camera_wrap').camera({
+					loader: false,
+					pagination: false ,
+					minHeight: '444',
+					thumbnails: false,
+					height: '27.86458333333333%',
+					caption: true,
+					navigation: true,
+					fx: 'simpleFade'
+				});
+				$().UItoTop({ easingType: 'easeOutQuart' });
+			});
+		</script>
+		
+	</head>
+	<body class="page1" id="top">
+		
+		<div class="main">
+		
+<!--==============================header=================================-->
+			<header>
+				<div class="container_12">
+					<div class="grid_12">
+						<div class="socials">
+							<a href="#" class="fa fa-twitter"></a>
+							<a href="#" class="fa fa-facebook"></a>
+							<a href="#" class="fa fa-google-plus"></a>
+							<a href="#" class="fa fa-instagram"></a>
+						</div> 
+						<h1>
+							<a href="index.html">
+								<img src="images/logo.png" alt="GameTech">
+							</a>
+						</h1>
+						<div class="menu_block">
+							<nav class="horizontal-nav full-width horizontalNav-notprocessed">
+								<ul class="sf-menu">
+									<li class="current"><a href="index.html">Home</a></li>
+									<li><a href="/registroGeneral">Registro</a></li>
+									<li><a href="/login">Login</a></li>
+									<li><a href="/quienessomos">¿Quienes somos?</a></li>
+									
+								</ul>
+							</nav>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</header>
+			<div class="slider_wrapper">
+				<div id="camera_wrap" class="">
+					<div data-src="images/slide.jpg">
+						<div class="caption fadeIn">
+							League of Legend
+						</div>
+					</div>
+					<div data-src="images/slide1.jpg">
+						<div class="caption fadeIn">
+							Heroes
+						</div>
+					</div>
+					<div data-src="images/slide2.jpg">
+						<div class="caption fadeIn">
+							Ranking 
+						</div>
+					</div>
+				</div>
+			</div>
+<!--==============================Content=================================-->
+				<div class="container_12">
+					<div class="grid_12">
+						<h2 class="center">GameTech</h2>
+						<div class="count_wrap">
+							<div class="clear"></div>
+							<a href="/registroGeneral">Registrate</a>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="grid_4">
+						<div class="box">
+							<div class="box_title">Heroes</div>
+							<div class="box_bot">
+								<div class="maxheight">
+									<img src="images/page1_img1.jpg" alt=""><a href="/consultarHeroe"target=”_blank”>Más</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid_4">
+						<div class="box">
+							<div class="box_title">Sets</div>
+							<div class="box_bot">
+								<div class="maxheight">
+									<img src="images/page1_img2.jpg" alt=""><a href="#"target=”_blank”>Más</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid_4">
+						<div class="box">
+							<div class="box_title">Ranking</div>
+							<div class="box_bot">
+								<div class="maxheight">
+									<img src="images/page1_img3.jpg" alt=""><a href="#"target=”_blank”>Más</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="grid_7">
+						<h3>¿Qué es GameTech?</h3>
+						<img src="images/page1_img4.jpg" alt="" class="img_inner fleft">
+						<div class="extra_wrapper">
+							<p>GameTech es la aplicación con toda la información necesaria de League of Legend</p>
+							<p>Una aplicación web que te brinda información a cerca de cada uno de los heroes de League of Legend y ademas podras consultar sets de para cada heroe. </p>
+							<p>Disponemos de los ultimos sets usados en competitivo y los más populares de la comunidad. </p>
+							<p>Ademas podras visualizar la liga en la que te posicionan y ver el ranking de los mejores jugadores. </p>
+							<p>Registrate para tener un propio perfil personalizado. </p>
+						</div>
+					
+					</div>
+					<div class="grid_4 prefix_1">
+						<h3>Actualizaciones</h3>
+						<div class="news">
+							<time datetime="2020-02-17">10<span>FEB</span></time>
+							<div class="extra_wrapper">
+								<p class="color1"><a href="#">Bienbenidos a GameTech! </a></p>
+								Proxima apertura!
+							</div>
+						</div>
+						<div class="news">
+							<time datetime="2020-02-21">20<span>FEB</span></time>
+							<div class="extra_wrapper">
+								<p class="color1"><a href="#">Nuevo Heroes en camino </a></p>
+								La llegada de un nuevo heroe a League of Legend esta cerca!
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="grid_12">
+						<div class="hor_separator"></div>
+						<h3 class="head1 center">GameTech somos David, Ruben y David</h3>
+					<!--  </div>
+					<div class="clear"></div>
+					<div class="grid_12">
+						<div id="grid" class="main">
+							<div class="view">
+								<div class="view-back">
+									<span data-icon="" class="fa fa-eye"><span>110</span></span>
+									<span data-icon="" class="fa fa-heart-o"><span>60</span></span>
+									<a href="#">&rarr;</a>
+								</div>
+								<img src="images/page1_img5.jpg" />
+							</div>
+							<div class="view">
+								<div class="view-back">
+									<span data-icon="" class="fa fa-eye"><span>208</span></span>
+									<span data-icon="" class="fa fa-heart-o"><span>813</span></span>
+									<a href="#">&rarr;</a>
+								</div>
+								<img src="images/page1_img6.jpg" />
+							</div>
+							<div class="view">
+								<div class="view-back">
+									<span data-icon="" class="fa fa-eye"><span>51</span></span>
+									<span data-icon="" class="fa fa-heart-o"><span>88</span></span>
+									<a href="#">&rarr;</a>
+								</div>
+								<img src="images/page1_img7.jpg" />
+							</div>
+							<div class="clear"></div>
+							<div class="view">
+								<div class="view-back">
+									<span data-icon="" class="fa fa-eye"><span>228</span></span>
+									<span data-icon="" class="fa fa-heart-o"><span>62</span></span>
+									<a href="#">&rarr;</a>
+								</div>
+								<img src="images/page1_img8.jpg" />
+							</div>
+							<div class="view">
+								<div class="view-back">
+									<span data-icon="" class="fa fa-eye"><span>117</span></span>
+									<span data-icon="" class="fa fa-heart-o"><span>368</span></span>
+									<a href="#">&rarr;</a>
+								</div>
+								<img src="images/page1_img9.jpg" />
+							</div>
+							<div class="view">
+								<div class="view-back">
+									<span data-icon="" class="fa fa-eye"><span>22</span></span>
+									<span data-icon="" class="fa fa-heart-o"><span>38</span></span>
+									<a href="#">&rarr;</a>
+								</div>
+								<img src="images/page1_img10.jpg" />
+							</div>
+						</div>
+						-->
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+<!--==============================footer=================================-->
+		<footer>
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="f_logo">
+						<a href="index.html">GameTech</a>
+					</div>
+					<div class="f_contacts">
+						<a href="#" class="mail_link"><span class="fa fa-envelope"></span> GameTech@gmail.com</a>
+						<!-- <div class="f_phone"><span class="fa fa-phone"></span>+1 800 559 6580</div> -->
+					</div>
+					
+					
+					<div class="copy">
+						
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</footer>
+		<script src="js/jquery.countdown.js"></script>
+		<script src="js/cd_config.js"></script>
+		<script src="js/modernizr.custom.69142.js"></script>
+		<script type="text/javascript">
+			Modernizr.load({
+				test: Modernizr.csstransforms3d && Modernizr.csstransitions,
+				yep : ['http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js','js/jquery.hoverfold.js'],
+				nope: 'css/fallback.css',
+				callback : function( url, result, key ) {
+					if( url === 'js/jquery.hoverfold.js' ) {
+						$( '#grid' ).hoverfold();
+					}
+				}
+			});
+		</script>
+		
+	</body>
+</html>
