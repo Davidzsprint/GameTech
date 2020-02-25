@@ -1,7 +1,21 @@
-package com.gametech.demo;
+package com.example.HolaMundo;
 
+import java.util.*;
+
+import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
+@CacheConfig(cacheNames = "GameTechAPP")
+public interface UsuarioRepository extends JpaRepository<Usuario, Long>{
 
+	List<Usuario> findByAlias(String alias);
+	
+	List<Usuario> findByPais(String pais);
+	
+	List<Usuario> findByElo(int elo);
+	
+	List<Usuario> findByEmail(String email);
+	
+	List<Usuario> findByPaisOrderByEloDesc(String pais);
+	 
 }

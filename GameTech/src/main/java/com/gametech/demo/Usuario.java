@@ -1,9 +1,13 @@
-package com.gametech.demo;
+package com.example.HolaMundo;
 
+
+import java.util.ArrayList;
+import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Usuario {
@@ -13,102 +17,107 @@ public class Usuario {
 	private long id;
 	
 	private String alias;
-	private String contraseña;
-	private String liga;
+	private String contrasena;
+	private String pais;
+	private String servidor;
+	private String email;
+	private int elo;
 	
-	private boolean admin;
+	@OneToMany
+	private List<Build> builds = new ArrayList<>();
 	
-	//Opcional
-	private String nombre;
-	private String apellidos;
-	private String direccion;
-	private int edad;
-	private String region;
-	private String nacionalidad;
+	public Usuario() {}
 	
-	
-	
-	public Usuario(String alias, String contraseña, String liga, boolean admin) {
-		super();
+	public Usuario(String alias, String contra, String pais, String servidor, String email) {
+
 		this.alias = alias;
-		this.contraseña = contraseña;
-		this.liga = liga;
-		this.admin = admin;
+		this.contrasena = contra;
+		this.pais = pais;
+		this.servidor = servidor;
+		this.email = email;
+		
+		int n = (int) (Math.random()*(100-200+1)+200); //generamos un elo aleatorio entre 100 y 200
+		this.elo = n;
 	}
-	
+
 	public long getId() {
 		return id;
 	}
+
 	public void setId(long id) {
 		this.id = id;
 	}
+
 	public String getAlias() {
 		return alias;
 	}
+
 	public void setAlias(String alias) {
 		this.alias = alias;
 	}
-	public String getContraseña() {
-		return contraseña;
+
+	public String getContrasena() {
+		return contrasena;
 	}
-	public void setContraseña(String contraseña) {
-		this.contraseña = contraseña;
+
+	public void setContrasena(String contrasena) {
+		this.contrasena = contrasena;
 	}
-	public String getLiga() {
-		return liga;
+
+	public String getPais() {
+		return pais;
 	}
-	public void setLiga(String liga) {
-		this.liga = liga;
+
+	public void setPais(String pais) {
+		this.pais = pais;
 	}
-	public boolean isAdmin() {
-		return admin;
+
+	public String getServidor() {
+		return servidor;
 	}
-	public void setAdmin(boolean admin) {
-		this.admin = admin;
+
+	public void setServidor(String servidor) {
+		this.servidor = servidor;
 	}
-	public String getNombre() {
-		return nombre;
+
+	public String getEmail() {
+		return email;
 	}
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
-	public String getApellidos() {
-		return apellidos;
+
+	public int getElo() {
+		return elo;
 	}
-	public void setApellidos(String apellidos) {
-		this.apellidos = apellidos;
+
+	public void setElo(int elo) {
+		this.elo = elo;
 	}
-	public String getDireccion() {
-		return direccion;
+
+	public List<Build> getBuilds() {
+		return builds;
 	}
-	public void setDireccion(String direccion) {
-		this.direccion = direccion;
+
+	public void setBuilds(List<Build> builds) {
+		this.builds = builds;
 	}
-	public int getEdad() {
-		return edad;
-	}
-	public void setEdad(int edad) {
-		this.edad = edad;
-	}
-	public String getRegion() {
-		return region;
-	}
-	public void setRegion(String region) {
-		this.region = region;
-	}
-	public String getNacionalidad() {
-		return nacionalidad;
-	}
-	public void setNacionalidad(String nacionalidad) {
-		this.nacionalidad = nacionalidad;
-	}
+
 	@Override
 	public String toString() {
-		return "Usuario [alias=" + alias + ", liga=" + liga + ", nombre=" + nombre + ", apellidos=" + apellidos
-				+ ", direccion=" + direccion + ", edad=" + edad + ", region=" + region + ", nacionalidad="
-				+ nacionalidad + "]";
+		return "Usuario [id=" + id + ", alias=" + alias + ", contrasena=" + contrasena + ", pais=" + pais
+				+ ", servidor=" + servidor + ", email=" + email + ", elo=" + elo + "]";
 	}
 	
+	//Para monstar las Builds
+	public void recorrerBuilds() {
+		System.out.println("BUILDS\n-----------------");
+		for(Build b: this.builds) {
+			System.out.println(b.toString());
+		}
+		System.out.println("");
+	}
 	
 	
 }

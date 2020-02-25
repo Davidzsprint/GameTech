@@ -1,8 +1,7 @@
-package com.example.GameTech;
+package com.example.HolaMundo;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,16 +10,17 @@ import javax.persistence.OneToMany;
 
 @Entity
 public class Ranking {
-
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 	
 	@OneToMany
-	private List<Usuario> usuarios = new ArrayList<Usuario>();
+	private List<Usuario> usuarios = new ArrayList<>();
+	
 	
 	public Ranking () {}
-
+	
 	public long getId() {
 		return id;
 	}
@@ -46,9 +46,8 @@ public class Ranking {
 		System.out.println("Lista de usuarios del Ranking");
 		System.out.println("------------------------------");
 		for(Usuario u : this.usuarios) {
-			System.out.println(u.getAlias());
+			System.out.println(u.getAlias()+" ELO ["+u.getElo()+"]");
 		}
 	}
-	
 	
 }
