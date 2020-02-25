@@ -1,4 +1,4 @@
-package com.example.GameTech;
+package com.example.HolaMundo;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -7,7 +7,6 @@ import javax.persistence.Id;
 
 @Entity
 public class Build {
-	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
@@ -20,6 +19,8 @@ public class Build {
 	private String objeto4;
 	private String objeto5;
 	private String objeto6;
+	
+
 	
 	public Build() {}
 	
@@ -113,10 +114,6 @@ public class Build {
 		return "Build [id=" + id + ", nombreBuild=" + nombreBuild + ", objeto1=" + objeto1 + ", objeto2=" + objeto2
 				+ ", objeto3=" + objeto3 + ", objeto4=" + objeto4 + ", objeto5=" + objeto5 + ", objeto6=" + objeto6
 				+ "]";
-	}
-	
-	
-	
-	
-	
+	}	
+
 }
