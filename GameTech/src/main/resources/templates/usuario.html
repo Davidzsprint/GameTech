@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>¿Quienes Somos?</title>
+		<title>usuario</title>
 		<meta charset="utf-8">
 		<meta name = "format-detection" content = "telephone=no" />
 		<link rel="icon" href="images/favicon.ico">
 		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="stylesheet" href="css/table.css">
 		<link rel="stylesheet" href="css/style.css">
 		<script src="js/jquery.js"></script>
 		<script src="js/jquery-migrate-1.2.1.js"></script>
@@ -41,10 +42,14 @@
 						<div class="menu_block">
 							<nav class="horizontal-nav full-width horizontalNav-notprocessed">
 								<ul class="sf-menu">
-									<li><a href="index.html">Home</a></li>
-									<li><a href="/registroGeneral">Registro</a></li>
-									<li><a href="/login">Login</a></li>
-									<li class="current"><a href="/quienessomos">¿Quienes somos?</a></li>	
+									<li class="current"><a href="/usuario">Area Personal</a></li>
+									<li><a href="/buildJugador">Builds Jugador</a></li>
+									
+						  			<li> <form method="post" action="/logout">  
+						           		<input type="hidden" name="_csrf" value={{token}}>   
+										<input type="submit" value="Abandonar Sesión" class="enlace" />	
+									</form>
+						  			</li>		  					  					
 								</ul>
 							</nav>
 							<div class="clear"></div>
@@ -54,46 +59,40 @@
 				</div>
 			</header>
 <!--==============================Content=================================-->
-			<div class="content"><div class="ic">More Website Templates @ TemplateMonster.com - April 21, 2014!</div>
-				<div class="container_12">
-					<div class="grid22">
-						<h7>EQUIPO GAMETECH</h7>
-					</div>
+                 
+                
 					
-					<div class="grid23">
-						
-							<img src="images/jefe.jpg" alt="" height="250px" class="img_inner fleft">
-						<div class="extra_wrapper">
-							<h8>DAVID BELTRAN SANCHEZ</h8>
-							<p class="color1">Jefe e integrante del proyecto</p>
-							 Fundador de GameTech, estudiante de Ingenieria en Computadores por la Universidad Rey Juan Carlos I.
-						</div>	
-					</div>
-					
-					<div class="grid23">
-							<img src="images/jefe.jpg" alt="" height="250px" class="img_inner fleft">
-						<div class="extra_wrapper">
-							<h8>RUBEN BELTRAN SANCHEZ</h8>
-							<p class="color1">Jefe e integrante del proyecto</p>
-							Fundador de GameTech, estudiante de Ingenieria en Computadores por la Universidad Rey Juan Carlos I.
-							</div>	
-					</div>
-					
-					<div class="grid23">
-							<img src="images/jefe.jpg" alt="" height="250px" class="img_inner fleft">
-						<div class="extra_wrapper">
-							<h8>DAVID CALDERON GARCIA</h8>
-							<p class="color1">Jefe e integrante del proyecto</p>
-							Fundador de GameTech, estudiante de Ingenieria en Computadores por la Universidad Rey Juan Carlos I.
-							<div class="clear"></div>
-					</div>
-						
-						<!-- </div><h3 class="head1 center">GameTech somos David, Ruben y David</h3></div> -->
-					</div>
-					<div class="clear"></div>
+         
+   		
+			<!--  Datos usuario -->   
+			<div class="container_12" >
+			<input type="hidden" name="_csrf" value={{token}}>	
+		        <h2>{{AliasUsuario}}</h2>
+		        <p><b>Jugador</b></p>   
+		         <ul class="container_12" >
+		         		  <li><p>Servidor: {{nombreServidor}}</p></li> 
+		         		  <li><p>Pais: {{nombrePais}}</p></li> 
+		         		  <li><p>ELO: {{listaELO}}</p></li> 
+			              <li><p><span class="fa fa-envelope fa-2x" ></span>  {{email}}</p></li>
+			            </ul> 
+			            <hr>  
+		      </div>           
+	 
+	 <!--  Histórico de eventos -->
+
+				
 				</div>
+				
+				<div class="clear"></div>
+	
 			</div>
+				
+				<!-- </div><h3 class="head1 center">Gametech somos David, Ruben y David</h3></div> -->
+				
+				<div class="clear"></div>
+				
 		</div>
+					
 <!--==============================footer=================================-->
 		<footer>
 			<div class="container_12">

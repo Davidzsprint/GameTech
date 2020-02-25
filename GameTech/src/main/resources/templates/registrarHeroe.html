@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>¿Quienes Somos?</title>
+		<title>Registro Heroe</title>
 		<meta charset="utf-8">
 		<meta name = "format-detection" content = "telephone=no" />
 		<link rel="icon" href="images/favicon.ico">
@@ -41,10 +41,10 @@
 						<div class="menu_block">
 							<nav class="horizontal-nav full-width horizontalNav-notprocessed">
 								<ul class="sf-menu">
-									<li><a href="index.html">Home</a></li>
-									<li><a href="/registroGeneral">Registro</a></li>
+									<li><a href="/">Home</a></li>
 									<li><a href="/login">Login</a></li>
-									<li class="current"><a href="/quienessomos">¿Quienes somos?</a></li>	
+									<li class="current"><a href="/registroGeneral">Registro</a></li>
+									<li><a href="/quienessomos">¿Quienes somos?</a></li>		
 								</ul>
 							</nav>
 							<div class="clear"></div>
@@ -54,46 +54,57 @@
 				</div>
 			</header>
 <!--==============================Content=================================-->
-			<div class="content"><div class="ic">More Website Templates @ TemplateMonster.com - April 21, 2014!</div>
-				<div class="container_12">
-					<div class="grid22">
-						<h7>EQUIPO GAMETECH</h7>
-					</div>
-					
-					<div class="grid23">
+			<div class="content">
+				<div class="container_12"><CENTER>
+					<div class="grid_12">
+						<h3>AGREGAR HEROE</h3>
+					</div>	
+						<body>				
+						<div class="inner">						
+							<form method="POST" action="nuevoHeroe">
+								<h8>Formulario de Heroe</h8>
+								<div class="form-group">
+									<input type="text" placeholder="Introduce un nombre" name=nombre class="form-control">
+									<p></p>
+									<div class="clear"></div>
+								  	<input type="text" placeholder="Introduce descripcion" name=descripcion class="form-control">
+								  	<p></p>
+								  	<div class="clear"></div>
+								  	<input type="text" placeholder="Introduce posicion" name=posicion class="form-control">
+								  	<p></p>
+								  	<div class="clear"></div>
+								  	<input type="text" placeholder="Introduce la vida" name=vida class="form-control">
+								  	<p></p>
+ 								  	<div class="clear"></div>
+								  	<input type="text" placeholder="Introduce el ataque" name=ataque class="form-control">
+								  	<p></p>
+									<div class="clear"></div>
+								  	<input type="text" placeholder="Introduce la defensa" name=defensa class="form-control">
+								  	<p></p>
+									<div class="clear"></div>
+								  	<input type="text" placeholder="Introduce el mana" name=mana class="form-control">
+								  	<p></p>
+								  	<div class="clear"></div>
+								  	<input type="text" placeholder="Introduce  dificultad" name=dificultad class="form-control">
+								  	<p></p>
+								</div>
+							
 						
-							<img src="images/jefe.jpg" alt="" height="250px" class="img_inner fleft">
-						<div class="extra_wrapper">
-							<h8>DAVID BELTRAN SANCHEZ</h8>
-							<p class="color1">Jefe e integrante del proyecto</p>
-							 Fundador de GameTech, estudiante de Ingenieria en Computadores por la Universidad Rey Juan Carlos I.
-						</div>	
+								<button class ="zmdi zmdi-arrow-right"> Registrar</button>
+							</form>
+						</div>
 					</div>
-					
-					<div class="grid23">
-							<img src="images/jefe.jpg" alt="" height="250px" class="img_inner fleft">
-						<div class="extra_wrapper">
-							<h8>RUBEN BELTRAN SANCHEZ</h8>
-							<p class="color1">Jefe e integrante del proyecto</p>
-							Fundador de GameTech, estudiante de Ingenieria en Computadores por la Universidad Rey Juan Carlos I.
-							</div>	
-					</div>
-					
-					<div class="grid23">
-							<img src="images/jefe.jpg" alt="" height="250px" class="img_inner fleft">
-						<div class="extra_wrapper">
-							<h8>DAVID CALDERON GARCIA</h8>
-							<p class="color1">Jefe e integrante del proyecto</p>
-							Fundador de GameTech, estudiante de Ingenieria en Computadores por la Universidad Rey Juan Carlos I.
-							<div class="clear"></div>
-					</div>
+											
 						
+					</div>
+						<div class="clear"></div>
 						<!-- </div><h3 class="head1 center">GameTech somos David, Ruben y David</h3></div> -->
 					</div>
 					<div class="clear"></div>
 				</div>
 			</div>
 		</div>
+		</CENTER>
 <!--==============================footer=================================-->
 		<footer>
 			<div class="container_12">
