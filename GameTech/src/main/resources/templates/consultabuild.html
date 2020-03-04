@@ -1,0 +1,135 @@
+<!doctype html>
+
+<HTML> 
+
+	<HEAD> 
+		<TITLE>GAMETECH</TITLE> 
+		<meta charset="utf-8"/>
+		<link rel="shortcut icon" href="images/logo.ico/" type="image/x-icon">
+		<meta name="author" content="GameTech">
+		<meta name="description" content="Inscripción de Heroes y Base de datos">
+		<meta name="keywords" content="heroe liga ranking build">
+		<style type="text/css">
+			h1 {
+			  border-style: none;
+			  font-family: Arial,Helvetica,sans-serif;
+			  font-weight: bold;
+			  text-transform: uppercase;
+			  font-size: 40px;
+			  color: #FAFAFA;
+			}
+			h4 {
+			  font-weight: bold;
+			  text-transform: uppercase;
+			  font-family: Arial,Helvetica,sans-serif;
+			  color: #000099;
+			  font-size: 15px;
+			}
+		  </style>		
+	</HEAD>
+	
+	<BODY BACKGROUND="/images/fondo.jpg" style ="max-width::100%;width:auto;height:auto;">
+		<table style="text-align: left; width: 85%; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+		  <tbody>
+			<tr>
+			  <td style="vertical-align: middle; text-align: center; background-color: E0F8F7;"><img style="width: 181px; height: 126px;" alt="gametech" src="/images/logo.png"></td>
+			  <td style="vertical-align: top; height: 100%;">
+			  <table style="text-align: left; width: 100%; height: 100%; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+				<tbody>
+				  <tr style="color: rgb(0, 0, 153);" align="center">
+					<td style="vertical-align: middle; background-color: E0F8F7;">
+					<h1></big><big>GAMETECH</big></big></h1>
+					</td>
+				  </tr>
+				  <tr>
+					<td style="vertical-align: top; background-color: #E0F8F7; text-align: center;"><strong>
+					<script type="text/javascript" align="center">
+						var d = new Date();
+						var day = d.getDate();
+						var month = new Array();
+						month[0] = "Enero";
+						month[1] = "Febrero";
+						month[2] = "Marzo";
+						month[3] = "Abril";
+						month[4] = "Mayo";
+						month[5] = "Junio";
+						month[6] = "Julio";
+						month[7] = "Agosto";
+						month[8] = "Septiembre";
+						month[9] = "Octubre";
+						month[10] = "Noviembre";
+						month[11] = "Diciembre";
+						if (day<10){
+							document.write('0'+day+' de '+month[d.getMonth()],' de '+d.getFullYear());
+						}else{
+							document.write(day+' de '+month[d.getMonth()],' de '+d.getFullYear());
+						}
+					</script>
+					</strong><br>
+					</td>
+				  </tr>
+				</tbody>
+			  </table>
+			  <br>
+			  </td>
+			  <td style="vertical-align: middle; text-align: center; background-color: E0F8F7;"><img style="width: 174px; height: 126px;" alt="gametech" src="/images/logo.png" align="middle"></td>
+			</tr>
+		  </tbody>
+		</table>
+		<h1 align="center">BUILD</h1>
+		<TABLE align="center" BORDER=0 BGCOLOR=E0F8F7>
+			<TR style="background-color: E0F8F7; height: 25px">
+				<TH>
+					<h4>NOMBRE</h4>
+				</TH>
+				<TH>
+					<h4>OBJETO1 </h4>
+				</TH>
+				<TH>
+					<h4>OBJETO2 </h4>
+				</TH>								
+				<TH>
+					<h4>OBJETO3 </h4>
+				</TH>
+				<TH>
+					<h4>OBJETO4 </h4>
+				</TH>
+				<TH>
+					<h4>OBJETO5 </h4>
+				</TH>
+				<TH>
+					<h4>OBJETO6</h4>
+				</TH>			
+			</TR>
+			{{#build}}
+			<TR BGCOLOR=#FFFFFF style="height: 25px">
+				<TH> {{nombreBuild}}
+				</TH>
+				<TH> {{objeto1}}
+				</TH>
+				<TH> {{objeto2}}
+				</TH>				
+				<TH> {{objeto3}}
+				</TH>
+				<TH> {{objeto4}}
+				</TH>	
+				<TH> {{objeto5}}
+				</TH>				
+				<TH> {{objeto6}}
+				</TH>
+			</TR>
+			{{/build}}			
+		</TABLE>
+		<br>
+		<form action="/realizarconsultas" method="post">
+		<TABLE align="center" BORDER=0 BGCOLOR=#000099>
+			<TR>
+				<TH BGCOLOR=#000099>
+					<input type="submit" value="Volver" style="background-color: E0F8F7; height: 75px; width: 300px; border: 1px solid #000099; font-weight:bold;font-size: 20px;">
+					<!--  IMPLEMENTAR SEGURIDAD -->
+				</TH>
+			</TR>
+		</TABLE>
+		</form>		
+	</BODY>	
+</HTML>
