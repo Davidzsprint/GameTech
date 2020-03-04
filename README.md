@@ -15,13 +15,13 @@ Esta aplicación consiste dar información relacionada con el juego League of Le
 # Entidades:
 - Heroes: toda la informacion de cada heroe.
 
-- Usuario: Dispone de alias y contraseña, ademas contiene informacion del usuario e informacion de su juego.
+- Usuario: Inforcion sobre el usuario como su alias, contraseña, pais, elo, etc.
 
-- Build (Conjunto de objetos): Contiene la información de los conjuntos de objetos que se pueden utilizar con cada héroe
+- Build (Guia de objetos): Contiene la información de los de los objetos que va utuliza un heroe.
 
-- Liga: liga a la que el usuario pertenece en League of lenguend, posicion, nombre de liga, etc.
+- Liga: liga a la que el usuario pertenece en League of lenguend, (Bronce, Plata, Oro o Diamante)
 
-- Ranking: numero total de partidas ganadas de los usuarios y KDA.
+- Ranking: mostrara el valor de su KDA segun su Pais/servidor.
 
 # Parte Pública:
 
