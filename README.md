@@ -25,31 +25,32 @@ Esta aplicación consiste dar información relacionada con el juego League of Le
 
 # Parte Pública:
 
-- Mostrar cada héroe (nombre, descripción, posicion, vida, ataque, defensa, mana, energia).
+- Consultar héroe por nombre (nombre, descripción, posicion, vida, ataque, defensa, mana, etc.).
 
-- Mostrar los conjuntos de objetos guardados del héroe seleccionado
+- Mostrar los usuario por nacionalidad
 
-- Consultar liga (nombre de liga, posición en la liga (hierro, bronce, plata, oro, diamante, platino))
+- Consultar Builds por su nombre.
 
-- Consultar héroe segun posición  (adc, support, top, mid, jungla).
+- Consultar héroe segun posición  (ADC, Support, Top, mid, jungla).
+
+- Consultar informacion accerca de un usuario
+
+- Consultar usuarios por nacionalidad  (pais)
 
 - Consultar héroe segun su dificultdad de manejo (nivel de dificultdad).
 
-- Consultar ranking de victorias totales y KDA.
+- Consultar ranking por pais.
 
 # Parte Privada:
 
-- Un usuario podrá cambiar de region (Europa norte, Europa sur/ Asia/ Oceanía)
+- Consultar información privada del usuario, como es su contraseña y email o el numero de ID
 
-- Un usuario tendrá una lista de 5 héroes que él elija como favoritos o personajes que suele utilizar.
+- Un usuario podrá crear Builds personalidazas 
 
-- Area personal: Mostrar información del usuario (nick, servidor, pais, edad, ELO).
+- Registrar nuevos heroes (usuarios con rol de admin)
 
-- Builds Usuario: Un usuario podrá crear conjuntos de objetos y se mostrara en un historico .
-
-- Existirá un usuario administrador que se encargara de gestionar los héroes (añadir, borrar y mofificar caracteristicas) ademas de gestionar el ranking)
 # Servicio interno:
-- Enviar una notificación a traves e-mail a los usuarios en caso de lanzarse un nuevo personaje, proporcionando caracteristicas de dicho héroe.
+- Enviar una notificación a traves e-mail a los usuarios en caso de lanzarse un nuevo heroe, proporcionando caracteristicas de dicho héroe como su pòsicion, dificultad y todos sus atributos.
 # Diagrama E/R
 ![digrama](https://user-images.githubusercontent.com/61190606/74888391-1914ce00-537e-11ea-9dde-71579f9f30cf.jpg)
 
