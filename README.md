@@ -57,3 +57,6 @@ Esta aplicación consiste dar información relacionada con el juego League of Le
 
 # Diagrama UML
 ![UML](https://user-images.githubusercontent.com/60217867/74888084-457c1a80-537d-11ea-8a9d-83dda8cd7e5b.jpg)
+
+# Capturas
+https://github.com/Davidzsprint/GameTech/issues/3#issue-575800502
