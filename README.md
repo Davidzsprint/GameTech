@@ -10,8 +10,7 @@ David Calderon Casarrubios
 
 
 # Descripción temática de la web:
-Esta aplicación consiste dar información relacionada con el juego League of Lenguend. Mostrar caracteristicas de cada héroe, como son la vida, ataque, defensa, maná o energia y posición. Cambio de caracteristicas e información de nuevos héroes y clasificación del usuario. Además de tener la posibilidad de inscribirse a un torneo organizado por Gametech
-
+Esta aplicación consiste dar información relacionada con el juego League of Lenguend. Mostrar caracteristicas de cada héroe, como son la vida, ataque, defensa, maná y posición. Ademas avisar via email sobre nuevos héroes disponibles para el usuario. También se podrá consultar caracteristicas de los heroes, su dificultad, que objetos son los más usados para jugar un determinado roll en esa posición, etc. 
 # Entidades:
 - Heroes: toda la informacion de cada heroe.
 
