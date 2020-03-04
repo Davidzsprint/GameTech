@@ -2,6 +2,10 @@
 
 <HTML> 
 
+<!doctype html>
+
+<HTML> 
+
 	<HEAD> 
 		<TITLE>GAMETECH</TITLE> 
 		<meta charset="utf-8"/>
@@ -76,31 +80,60 @@
 			</tr>
 		  </tbody>
 		</table>
+		<h1 align="center">INFORMACION USUARIO</h1>
+		<TABLE align="center" BORDER=0 BGCOLOR=E0F8F7>
+			<TR style="background-color: E0F8F7; height: 25px">
+				<TH>
+					<h4>ID</h4>
+				</TH>
+				<TH>
+					<h4>ALIAS</h4>
+				</TH>
+				<TH>
+					<h4>CONTRASEÑA</h4>
+				</TH>
+				<TH>
+					<h4>PAIS</h4>
+				</TH>								
+				<TH>
+					<h4>SERVIDOR</h4>
+				</TH>
+				<TH>
+					<h4>EMAIL</h4>
+				</TH>
+				<TH>
+					<h4>ELO</h4>
+				</TH>	
+			</TR>
+			{{#usuario}}
+			<TR BGCOLOR=#FFFFFF style="height: 25px">
+				<TH> {{id}}
+				</TH>
+				<TH> {{alias}}
+				</TH>
+				<TH> {{contrasena}}
+				</TH>
+				<TH> {{pais}}
+				</TH>				
+				<TH> {{servidor}}
+				</TH>
+				<TH> {{email}}
+				</TH>	
+				<TH> {{elo}}
+				</TH>				
+			</TR>
+			{{/usuario}}			
+		</TABLE>
 		<br>
-		<br>
-		<br>
-		<form action="/realizarconsultas" method="post">
+		<form action="/areagestionusuario" method="post">
 		<TABLE align="center" BORDER=0 BGCOLOR=#000099>
 			<TR>
 				<TH BGCOLOR=#000099>
-					<input type="submit" value="REALIZAR CONSULTA" style="background-color: #E0F8F7; height: 75px; width: 300px; border: 1px solid #000099; font-weight:bold;font-size: 20px;">
-					<!-- Implementar seguridad -->
+					<input type="submit" value="Volver" style="background-color: E0F8F7; height: 75px; width: 300px; border: 1px solid #000099; font-weight:bold;font-size: 20px;">
+					<!--  IMPLEMENTAR SEGURIDAD -->
 				</TH>
 			</TR>
 		</TABLE>
-		</form>
-		<br>
-		<br>
-		<br>
-		<form action="/areaprivada" method="post">
-		<TABLE align="center" BORDER=0 BGCOLOR=#000099>
-			<TR>
-				<TH BGCOLOR=#000099>
-					<input type="submit" value="AREA ADMINISTRADOR" style="background-color: #E0F8F7; height: 75px; width: 360px; border: 1px solid #000099; font-weight:bold;font-size: 20px;">
-					<!-- Implementar seguridad -->
-				</TH>
-			</TR>
-		</TABLE>
-		</form>
+		</form>		
 	</BODY>	
 </HTML>
