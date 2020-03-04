@@ -1,8 +1,8 @@
-package com.example.GameTech;
+package com.example.HolaMundo;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.persistence.CascadeType;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -16,23 +16,15 @@ public class Liga {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 	private String nombreLiga;
-	
-	@OneToMany(cascade = CascadeType.ALL)
-	private List <Usuario> usuraios;
-	
+
+	@OneToMany(mappedBy="liga")
+	private List<Usuario> usuarios = new ArrayList<>();
 	
 	public Liga() {}
 	
-	public Liga(String nombreLiga, List<Usuario> listaUsuarios) {
-		
+	public Liga(String nombreLiga) {
+
 		this.nombreLiga = nombreLiga;
-		
-		//inicicializamos la lista
-		usuraios = new ArrayList<Usuario>();
-		
-		for(Usuario usuario: listaUsuarios) {
-			this.usuraios.add(usuario);
-		}
 	}
 
 	public long getId() {
@@ -50,25 +42,28 @@ public class Liga {
 	public void setNombreLiga(String nombreLiga) {
 		this.nombreLiga = nombreLiga;
 	}
+	
 
-	public List<Usuario> getUsuraios() {
-		return usuraios;
+	public List<Usuario> getUsuarios() {
+		return usuarios;
 	}
 
-	public void setUsuraios(List<Usuario> usuraios) {
-		this.usuraios = usuraios;
+	public void setUsuarios(List<Usuario> usuarios) {
+		this.usuarios = usuarios;
 	}
+
 
 	@Override
 	public String toString() {
-		return "Liga [id=" + id + ", nombreLiga=" + nombreLiga + ", usuraios=" + usuraios + "]";
+		return "Liga [id=" + id + ", nombreLiga=" + nombreLiga;
 	}
-	
+
+	public void addUsuarioLiga(Usuario u) {
+		this.usuarios.add(u);
+	}
+
 	public void mostrarUsaruiosLiga() {
-		
-		System.out.println("Usaruios de la liga "+this.getNombreLiga());
-		System.out.println("-----------------------------------------");
-		for(Usuario u: this.usuraios) {
+		for (Usuario u : this.usuarios) {
 			System.out.println(u.getAlias());
 		}
 	}

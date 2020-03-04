@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
 @Entity
@@ -23,8 +24,13 @@ public class Usuario {
 	private String email;
 	private int elo;
 	
+	@ManyToOne
+	private Liga liga;
+	
 	@OneToMany
 	private List<Build> builds = new ArrayList<>();
+	
+
 	
 	public Usuario() {}
 	
@@ -38,6 +44,8 @@ public class Usuario {
 		
 		int n = (int) (Math.random()*(100-200+1)+200); //generamos un elo aleatorio entre 100 y 200
 		this.elo = n;
+		
+		
 	}
 
 	public long getId() {
@@ -103,13 +111,22 @@ public class Usuario {
 	public void setBuilds(List<Build> builds) {
 		this.builds = builds;
 	}
+	
+	public Liga getLiga() {
+		return liga;
+	}
+
+	public void setLiga(Liga liga) {
+		this.liga = liga;
+	}
 
 	@Override
 	public String toString() {
 		return "Usuario [id=" + id + ", alias=" + alias + ", contrasena=" + contrasena + ", pais=" + pais
-				+ ", servidor=" + servidor + ", email=" + email + ", elo=" + elo + "]";
+				+ ", servidor=" + servidor + ", email=" + email + ", elo=" + elo + ", builds=" + builds + ", liga="
+				+ liga + "]";
 	}
-	
+
 	//Para monstar las Builds
 	public void recorrerBuilds() {
 		System.out.println("BUILDS\n-----------------");
@@ -119,5 +136,6 @@ public class Usuario {
 		System.out.println("");
 	}
 	
+
 	
 }

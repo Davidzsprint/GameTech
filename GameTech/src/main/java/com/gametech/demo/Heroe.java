@@ -1,4 +1,4 @@
-package com.example.GameTech;
+package com.example.HolaMundo;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -116,8 +116,5 @@ public class Heroe {
 				+ ", vida=" + vida + ", ataque=" + ataque + ", defensa=" + defensa + ", mana=" + mana + ", dificultad="
 				+ dificultad + "]";
 	}
-	
-	
-	
 	
 }
