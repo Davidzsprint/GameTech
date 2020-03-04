@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 @CacheConfig(cacheNames = "GameTechAPP")
 public interface UsuarioRepository extends JpaRepository<Usuario, Long>{
 
-	List<Usuario> findByAlias(String alias);
+	Usuario findByAlias(String alias);
 	
 	List<Usuario> findByPais(String pais);
 	
@@ -16,6 +16,10 @@ public interface UsuarioRepository extends JpaRepository<Usuario, Long>{
 	
 	List<Usuario> findByEmail(String email);
 	
+	Usuario findByContrasena(String contrasena);
+	
 	List<Usuario> findByPaisOrderByEloDesc(String pais);
+	
+	List<Usuario> findByServidor(String servidor);
 	 
 }

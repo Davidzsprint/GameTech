@@ -5,6 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface BuildRepository extends JpaRepository<Build, Long>{
 	
-	List<Build> findByNombreBuild(String nombreBuild);
+	Build findByNombreBuild(String nombreBuild);
+	Build findById(long id);
 	
 }
