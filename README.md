@@ -52,6 +52,7 @@ Esta aplicación consiste dar información relacionada con el juego League of Le
 - Enviar una notificación a traves e-mail a los usuarios en caso de lanzarse un nuevo heroe, proporcionando caracteristicas de dicho héroe como su pòsicion, dificultad y todos sus atributos.
 # Diagrama E/R
 
+![74888391-1914ce00-537e-11ea-9dde-71579f9f30cf](https://user-images.githubusercontent.com/60217867/75927301-6445db00-5e6c-11ea-8911-7290ed3aedd5.jpg)
 
 
 # Diagrama UML
