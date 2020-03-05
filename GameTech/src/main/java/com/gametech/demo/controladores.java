@@ -220,11 +220,20 @@ public class controladores implements CommandLineRunner {
 		//comprobamos si existe ese usuairio
 		Usuario existe = repositorioUsuario.findByAlias(alias);
 		
+		//Asigno una liga al usuario.
+		String [] nliga = {"Bronce",  "Plata", "Oro", "Diamante"};
+		int alatorio = (int) (Math.random()*(0-4+0)+4);
+		
+		Liga l = repositorioLiga.findByNombreLiga(nliga[alatorio]);
+		System.out.println(l.toString());
+		
 		if(existe == null) {
 			
 			Usuario usuario = new Usuario(alias, contrasena, pais, servidor, email);
+			usuario.setLiga(l);
 			repositorioUsuario.save(usuario);
 			
+			l.addUsuarioLiga(usuario);
 			return "areaprivada";
 		}
 		else 

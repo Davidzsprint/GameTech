@@ -217,8 +217,9 @@ public class DataBaseUsage implements CommandLineRunner {
 		Build builds = repositorioBuild.findByNombreBuild("ADC");
 		System.out.println(builds.getNombreBuild());
 		
-				
-
+		Usuario u = repositorioUsuario.findByAlias("kaka");
+		String n = u.getLiga().getNombreLiga();
+		System.out.println(u.getAlias()+" -> "+n);
 		
 		/**
 		System.out.println("\nEncontrar Usuario por Alias  = Rubew");
